@@ -5459,9 +5459,9 @@ homedir-polyfill@^1.0.1:
     parse-passwd "^1.0.0"
 
 honkify@*:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/honkify/-/honkify-0.0.5.tgz#f019d6f0950d2bae96b181d2bf0060b46be6a376"
-  integrity sha512-SQ+9JnR+gdTtC+QMu+7FeMsQK+Djt3wgdlA78kgXisrMrwz5P3c7SHp+kbmnDdTp768J5jAnRe/YG8gm3Am8BA==
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/honkify/-/honkify-0.1.0.tgz#66c669f21e8b93ebe936237eb41f5e0c2e74b05f"
+  integrity sha512-pzgFbbEgHIHzcpsEQ6AQIGGn6sMauA21A17uHSAbTgQhNAbucfyY60qRvMahviEs4LmxjTG8euji8g401BxYfw==
 
 hosted-git-info@^2.1.4:
   version "2.8.4"
