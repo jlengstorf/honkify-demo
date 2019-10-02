@@ -14,10 +14,12 @@
     "@theme-ui/prism": "^0.2.40",
     "gatsby": "^2.15.28",
     "gatsby-plugin-mdx": "^1.0.46",
+    "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-theme-ui": "^0.2.43",
     "honkify": "*",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-helmet": "^5.2.1",
     "theme-ui": "^0.2.43"
   },
   "main": "gatsby-config.js",
