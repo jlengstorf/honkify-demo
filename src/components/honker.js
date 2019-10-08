@@ -19,7 +19,7 @@ const Honker = () => {
   };
 
   return (
-    <button sx={{ variant: 'button.hollow' }} onClick={toggleHonk}>
+    <button class="no-honk" sx={{ variant: 'button.hollow' }} onClick={toggleHonk}>
       {honk.active ? 'unhonk' : 'honk!'}
     </button>
   );
