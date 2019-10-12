@@ -1,26 +1,25 @@
 /** @jsx jsx */
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { jsx } from 'theme-ui';
 import honkify from 'honkify';
 
 const Honker = () => {
-  const initialState = { active: false, unregister: () => {} };
-  const [honk, setHonk] = useState(initialState);
-  const toggleHonk = () => {
-    if (!honk.active) {
-      const unregister = honkify();
-      setHonk({ active: true, unregister });
-    }
+  const [isActive, setActive] = useState(false);
 
-    if (honk.active) {
-      honk.unregister();
-      setHonk(initialState);
+  useEffect(() => {
+    if (isActive) {
+      const unregister = honkify();
+      return () => unregister();
     }
+  }, [isActive]);
+
+  const toggleHonk = () => {
+    setActive(isActive => !isActive);
   };
 
   return (
-    <button className="no-honk" sx={{ variant: 'button.hollow' }} onClick={toggleHonk}>
-      {honk.active ? 'unhonk' : 'honk!'}
+    <button onClick={toggleHonk} className="no-honk" sx={{ variant: 'button.hollow' }}>
+      {isActive ? 'unhonk' : 'honk!'}
     </button>
   );
 };
